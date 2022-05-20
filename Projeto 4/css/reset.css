@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body > header{
+    width: 100%;
+    border-bottom: 4px solid red;
+}
+
+header section.menu{
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+header section.menu ul a, footer nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 30px;
+    font-size: 23px;
+    font-style: italic;
+}
+
+header .mobile-menu li{
+    margin: 0;
+}
+
+header section.menu .mobile-menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/icon_menu.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+header .menu .mobile-menu ul{
+    transition: 3s;
+    z-index: 999;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid red;
+}
+
+.menu-active{
+    display: block !important;
+}
+
+header .menu .mobile-menu ul li{
+    padding: 10px 0;
+    margin: 0;
+}
+
+header .menu .mobile-menu ul a{
+    margin: 0;
+}
+
+header .menu .mobile-menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section header.titulo{
+    margin: 80px 0;
+}
+
+section header.titulo div{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    margin: 30px 0;
+}
+
+section header.titulo div p{
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 500;
+    padding: 0 10px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    transform: translateY(-50%);
+}
+
+button , input[type=submit]{
+    cursor: pointer;
+    margin: 10px 0;
+    width: 150px;
+    padding: 6px 0;
+    color: white;
+    font-size: 16px;
+    background-color: #EB2D2D;
+    border-bottom: 5px solid #B21E1E;
+}
+
+footer{
+    width: 100%;
+    background-color: #252525;
+    padding: 40px 2%;
+    color: white;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul{
+    display: flex;
+    list-style: none;
+}
+
+footer nav ul li a{
+    color: white;
+}
+
+footer > div p{
+    font-size: 19px;
+    font-style: italic
+}
+
+@media screen and (max-width: 768px) {
+    header section.menu .mobile-menu{
+        display: block;
+    }
+    header section.menu .desktop-menu{
+        display: none;
+    }
+
+    footer nav{
+        display: none;
+    }
+    footer > div{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:420px){
+    header section.menu img{
+        width: 100px;
+    }
+    header .menu .mobile-menu ul{
+        top: 78px;
+    }
+}

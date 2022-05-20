@@ -1,0 +1,295 @@
+html body > header{
+    border: 0;
+}
+
+section.banner{
+    width: 100%;
+    background-image: url(../images/bg.jpg);
+    background-size: contain;
+    background-position: right;
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-bottom: 50px;
+}
+
+section.banner .boxes{
+    width: 300px;
+    max-width: 100%;
+    float: left;
+    margin: 100px 0 0 15%;
+}
+
+section.banner .boxes > div{
+    width: fit-content;
+    max-width: 100%;
+    background-size: 100% 100%;
+    background-image: url(../images/box-text.png);
+    padding: 15px 120px 15px 60px;
+    margin-top: 30px;
+    position: relative;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+    font-size: 23px;
+}
+
+section.banner .boxes > div:nth-of-type(2){
+    padding-right: 70px;
+    left: -10px;
+}
+
+section.banner .boxes > div:nth-of-type(3){
+    padding-right: 70px;
+    left: -20px;
+}
+
+section.banner .boxes > div:last-of-type{
+    padding-right: 80px;
+    left: -30px;
+}
+
+section.banner .boxes > div:last-of-type{
+    background-image: url(../images/box-white-text.png);
+    color: black;
+    font-size: 21px;
+}
+
+section.vitrine{
+    padding: 0 2%;
+}
+
+section.vitrine .catalogo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.vitrine .catalogo .catalogo-single{
+    font-style: italic;
+    flex: 1 1 280px;
+    margin: 0 10px;
+}
+
+section.vitrine .catalogo .catalogo-single img{
+    width: 450px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+section.vitrine .catalogo .catalogo-single h2{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+section.vitrine .catalogo .catalogo-single p{
+    margin: 5px 0;
+    font-size: 15px;
+    color: #353535;
+}
+
+section.info{
+    width: 100%;
+    display: flex;
+    color: white;
+    margin: 50px 0 20px 0;
+}
+
+section.info > div{
+    width: 50%;
+    padding: 60px;
+}
+
+section.info .serviços{
+    background-color: #242424;
+    padding-right: 90px;
+}
+
+section.info .depoimentos{
+    background-color: #eb3e3b;
+}
+
+section.info h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section.info p{
+    font-size: 22px;
+}
+
+section.info .serviços .serviços-container{
+    float: right;
+    width: 400px;
+    max-width: 100%;
+    margin-right: 80px;
+}
+
+section.info .serviços .serviços-container ul{
+    list-style-position: inside;
+    display: inline-block;
+}
+
+section.info .serviços .serviços-container button{
+    margin-left: 30px;
+}
+
+section.info .serviços .serviços-container a{
+    text-decoration: none;
+}
+
+section.info .depoimentos .switch-author{
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.info .depoimentos .switch-author img{
+    float: left;
+    margin: 10px;
+} 
+
+section.info .depoimentos .switch-author p{
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
+section.contato{
+    padding: 0 2%;
+}
+
+section.contato form{
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+section.contato form fieldset{
+    width: 100%;
+    margin: 12px 0;
+}
+
+section.contato form fieldset.email, section.contato form fieldset.tel{
+    float: left;
+    width: 48%;
+}
+
+section.contato form fieldset.tel{
+    float: right;
+}
+
+section.contato form fieldset input:not([type=submit]){
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+}
+
+section.contato form fieldset textarea{
+    height: 120px;
+    width: 100%;
+    resize: none;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+
+@media screen and (max-width:1440px){
+    section.banner{
+        height: 630px;
+        background-size: auto 100%;
+    }
+    section.banner .boxes{
+        margin: 30px 0 0 10%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    section.banner .boxes{
+        margin-left: 8%;
+    }
+
+    section.info .serviços{
+        padding-right: 0px;
+    }
+    section.info .serviços-container{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:980px){
+    section.banner{
+        height: 600px;
+        background-position: left;
+    }
+    section.banner .boxes{
+        margin-left: 2%;
+    }
+    section.banner .boxes > div:first-of-type{
+        left: 30px;
+    }
+    section.banner .boxes > div:nth-of-type(2){
+        left: 20px;
+    }
+    section.banner .boxes > div:nth-of-type(3){
+        left: 10px;
+    }
+    section.banner .boxes > div:last-of-type{
+        left: 0;
+    }
+
+    section.vitrine .catalogo{
+        flex-direction: column;
+        text-align: center;
+    }
+    section.vitrine .catalogo .catalogo-single{
+       margin: 15px auto;
+    }
+
+    section.info{
+        flex-direction: column; 
+    }
+
+    section.info > div{
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    section.info .serviços{
+        padding: 50px 20px;
+    }
+
+    section.info .serviços .serviços-container{
+        text-align: left;
+        width: fit-content;
+        float: none;
+        margin: 0 auto;
+    }
+    section.info .serviços .serviços-container button{
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.banner{
+        height: 580px;
+    }
+    section.banner .boxes > div{
+        padding-right: 60px;
+    }
+
+    section.contato form fieldset.email, section.contato form fieldset.tel{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:420px){
+    section.banner .boxes{
+        margin: 30px auto 2px auto;
+    }
+    section.banner .boxes > div{
+        max-width: 100%;
+    }
+}

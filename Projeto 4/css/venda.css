@@ -1,0 +1,163 @@
+main section header.titulo{
+    margin: 80px 0;
+}
+
+main .content{
+    padding: 0 2%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content .filtros{
+    width: 30%;
+    margin-right: 20px;
+}
+
+main .content .filtros h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+main .content .filtros .slide-preço{
+    width: 900px;
+    max-width: 100%;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+main .content .filtros .slide-preço .fill-preço{
+    width: 40%;
+    background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
+    height: 20px;
+    border-radius: 20px;
+}
+
+main .content .filtros .slide-preço .fill-preço .icon-slide{
+    float: right;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
+    position: relative;
+    top: -2.5px;
+    border: 1px solid #777;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.content .filtros .preços{
+    width: 900px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .filtros .check-filtro{
+    margin-top: 30px;
+}
+
+.content .filtros .check-filtro fieldset{
+    margin: 5px 0;
+}
+
+.content .filtros .check-filtro input{
+    display: none;
+}
+
+.content .filtros .check-filtro label{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.content .filtros .check-filtro input:checked + label > div{
+    background-color: black;
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article.carros{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 20px 0;
+}
+
+.catalogo .catalogo-single{
+    font-style: italic;
+    flex: 1 1 150px;
+    margin: 0 10px;
+}
+
+.catalogo .catalogo-single img{
+    width: 300px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.catalogo .catalogo-single h2{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.catalogo .catalogo-single p{
+    margin: 5px 0;
+    font-size: 15px;
+    color: #353535;
+}
+
+@media screen and (max-width: 930px) {
+    main .content{
+        flex-direction: column;
+    }
+
+    .content .filtros{
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 2%;
+        text-align: center;
+    }
+
+    .content .filtros .check-filtro{
+        width: fit-content;
+        margin: 30px auto 0 auto;
+        text-align: left;
+    }
+    
+    article.carros{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .catalogo{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .catalogo-single{
+        text-align: center;
+    }
+}

@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Márcio">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <script src="js/script.js"></script>
+    <title>Projeto 5</title>
+</head>
+
+<body>
+
+    <header>
+        <section class="container menu">
+            <a href="index.html"><img src="images/logo.jpg" alt=""></a>
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="#" style="color: red;">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-menu" id="mobile-menu">
+                <ul>
+                    <a href="index.html" style="color: red;"><li>Home</li></a>
+                    <a href="venda.html"><li>Venda</li></a>
+                    <a href="sobre.html"><li>Sobre</li></a>
+                    <a href="#"><li>Contato</li></a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="boxes">
+                <div>
+                    <p>Consultoria</p>
+                </div>
+                <div>
+                    <p>Compra</p>
+                </div>
+                <div>
+                    <p>Venda</p>
+                </div>
+                <div>
+                    <p>Email@hotmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container vitrine">
+            <header class="titulo">
+                <div>
+                    <p>VEÍCULOS EM DESTAQUE</p>
+                </div>
+            </header>
+
+            <article class="container catalogo">
+                <div class="catalogo-single">
+                    <img src="images/carro1.jpg">
+                    <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="venda-single.html"><button><i>Mais Detalhes</i></button></a>
+                </div>
+                <div class="catalogo-single">
+                    <img src="images/carro1.jpg">
+                    <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="venda-single.html"><button><i>Mais Detalhes</i></button></a>
+                </div>
+                <div class="catalogo-single">
+                    <img src="images/carro1.jpg">
+                    <h2>Volkswagen Karmann-ghia</h2>
+                    <p>1.6 8v, Gasolina, 2P, Manual1969</p>
+                    <a href="venda-single.html"><button><i>Mais Detalhes</i></button></a>
+                </div>
+            </article>
+        </section>
+
+        <section class="info">
+            <div class="serviços">
+                <div class="serviços-container">
+                    <h2>Serviços</h2>
+                    <ul>
+                        <li>Compra</li>
+                        <li>Venda</li>
+                        <li>Consultoria de veículos</li>
+                        <li>Indicação de Mecânicos e peças</li>
+                    </ul>
+                    <a href="#"><button><i>Saiba mais</i></button></a>
+                </div>
+            </div>
+
+            <div class="depoimentos">
+                <div id="dep1">
+                    <h2>Depoimentos</h2>
+                <p>“O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no
+                    almoço, no
+                    transfer, na visita ao veículo e durante o test-drive”</p>
+                    <p style="color: black;">João da Silva</p>
+                </div>
+                <div id="dep2" style="display: none;">
+                        <h2>Depoimentos</h2>
+                    <p>“Simplesmente um dos melhores atendimentos. Carros em ótimos estados. Simplesmente perfeito.”</p>
+                        <p style="color: black;">Danilo Almeida</p>
+                </div>
+                <div class="switch-author">
+                    <span style="cursor: pointer;" class="switch-dep"><img src="images/arrow-left.png"></span>
+                    <span style="cursor: pointer;" class="switch-dep"><img src="images/arrow-right.png"></span>
+                </div>
+            
+            </div>
+        </section>
+        <div style="clear:both"></div>
+
+
+        <section class="contato container">
+            <header class="titulo">
+                <div class="text">
+                    <p>CONTATO</p>
+                </div>
+            </header>
+
+            <article>
+                <form>
+                    <fieldset>
+                        <input type="text" placeholder="Nome*" id="nome" name="Nome" required>
+                    </fieldset>
+                    <fieldset class="email">
+                        <input type="email" placeholder="E-mail*" id="email" name="E-mail" required>
+                    </fieldset>
+                    <fieldset class="tel">
+                        <input type="text" placeholder="Telefone*" id="tel" name="Telefone" required>
+                    </fieldset>
+                    <div style="clear:both"></div>
+                    <fieldset class="mensagem">
+                        <textarea name="Mensagem" placeholder="Mensagem*"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#" style="color: red;">Home</a></li>
+                    <li><a href="venda.html">Venda</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <p>Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

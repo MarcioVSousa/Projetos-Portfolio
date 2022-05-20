@@ -1,0 +1,58 @@
+main{
+    padding: 0 2%;
+}
+
+section.content-sobre{
+    max-width: 840px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+section.content-sobre p{
+    line-height: 28px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+main section div.main-img{
+    width: 100%;
+    padding-top: 60%;
+    background-color: rgb(220,220,220);
+    margin-bottom: 20px;
+}
+
+main section article.main-text h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+main section article.img-text{
+    width: 100%;
+    margin-top: 20px;
+}
+
+main section article.img-text div.sub-img{
+    float: left;
+    width: 30%;
+    padding-top: 30%;
+    background-color: rgb(220,220,220);
+}
+
+main section article.img-text div.sub-text{
+    float: right;
+    width: 68%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 580px) {
+    main section article.img-text div.sub-img, main section article.img-text div.sub-text{
+        float: none;
+        width: 100%;
+    }
+
+    main section article.img-text div.sub-img{
+        padding-top: 100%;
+    }
+}

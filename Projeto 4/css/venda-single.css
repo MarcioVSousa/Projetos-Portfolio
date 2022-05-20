@@ -1,0 +1,189 @@
+main{
+    padding: 0 2%;
+}
+
+main section.nav-local a{
+    text-decoration: none;
+    color: black;
+}
+
+main section.nav-local span{
+    margin: 0 15px;
+}
+
+section.produto, section.nav-local{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+section.produto div.img-produto{
+    float: left;
+    width: 73%;
+}
+
+section.produto div.img-produto > img{
+    width: 100%;
+    object-fit: contain;
+}
+
+div.img-produto div.switch-produto{
+    margin: 30px 0;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+}
+
+div.img-produto div.switch-produto img{
+    width: 20px;
+    height: 18px;
+    float: left;
+}
+
+div.img-produto div.switch-produto div{
+    box-sizing: content-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 10px;
+    background-size: cover;
+    width: 28%;
+    padding-top: 21%;
+}
+
+div.img-produto div.switch-produto .mini-selected{
+    border: 5px solid rgb(210,210,210);
+}
+
+section.produto div.descriçao-produto{
+    float: right;
+    width: 25%;
+}
+
+section.produto div.descriçao-produto h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+section.produto div.descriçao-produto p{
+    font-size: 16.5px;
+    margin: 20px 0;
+}
+
+section.contato form{
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+section.contato form fieldset{
+    width: 100%;
+    margin: 12px 0;
+}
+
+section.contato form fieldset.email, section.contato form fieldset.tel{
+    float: left;
+    width: 48%;
+}
+
+section.contato form fieldset.tel{
+    float: right;
+}
+
+section.contato form fieldset input:not([type=submit]){
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+section.contato form fieldset textarea{
+    height: 140px;
+    width: 100%;
+    resize: none;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+
+section.vitrine{
+    margin-bottom: 60px;
+}
+
+section.vitrine .catalogo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.vitrine .catalogo .catalogo-single{
+    font-style: italic;
+    flex: 1 1 280px;
+    margin: 0 10px;
+}
+
+section.vitrine .catalogo .catalogo-single img{
+    width: 450px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+section.vitrine .catalogo .catalogo-single h2{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+section.vitrine .catalogo .catalogo-single p{
+    margin: 5px 0;
+    font-size: 15px;
+    color: #353535;
+}
+
+@media screen and (max-width:1280px) {
+    section.produto, section.nav-local{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    section.produto, section.nav-local{
+        width: 90%;
+    }
+
+    section.produto div.img-produto{
+        width: 70%;
+    }
+
+    section.produto div.descriçao-produto{
+        width: 27%;
+    }
+
+    section.vitrine .catalogo{
+        flex-direction: column;
+        text-align: center;
+    }
+    section.vitrine .catalogo .catalogo-single{
+       margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section.produto, section.nav-local{
+        width: 100%;
+    }
+
+    section.produto div.img-produto, section.produto div.descriçao-produto{
+        float: none;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    section.produto div.descriçao-produto{
+        text-align: center;
+    }
+
+    section.contato form fieldset.email, section.contato form fieldset.tel{
+        float: none;
+        width: 100%;
+    }
+}
