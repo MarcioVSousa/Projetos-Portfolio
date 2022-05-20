@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+html, body{
+    height: 100%;
+}
+
+.cabeçalho{
+    width: 100%;
+}
+
+header{
+    padding-top: 40px;
+    width: 100%;
+    height: 90vh;
+    min-height: 800px;
+    max-height: 900px;
+    background-image: url(../imagens/capa.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.mobile-menu{
+    display: none;
+    background-image: url(../imagens/menu.png);
+    background-size: cover;
+    padding-top: 30px;
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    float: right;
+}
+
+.mobile-menu ul{
+    transition: 1s;
+    float: none;
+    display: block;
+    margin-bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.mobile-menu ul.disabled{
+    display: none;
+}
+
+header .cabeçalho .mobile-menu li{
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+header .cabeçalho .mobile-menu li:hover{
+    background-color: #ccc;
+}
+
+header .cabeçalho .mobile-menu a{
+    color: black;
+    font-size: 16px;
+}
+
+.desktop-menu{
+    float: right;
+    text-align: center;
+    width: 50%;
+}
+
+.desktop-menu a, .mobile-menu a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font-size: 23px;
+}
+
+.logo{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.logo img{
+    transform: translateX(-50%);
+    width: 160px;
+}
+
+.mensagem{
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+}
+
+.mensagem h1{
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.mensagem p{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pos-header{
+    position: relative;
+    width: 100%;
+    height: 390px;
+    background-color: #472663;
+}
+
+.chamada-width{
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.chamada{
+    display: inline-block;
+    text-align: left;
+    padding: 40px;
+}
+
+.chamada h2{
+    font-size: 38px;
+    font-weight:lighter;
+    margin: 10px 0;
+}
+
+.chamada ul{
+    list-style-position: inside;
+    margin: 8px 0;
+}
+
+.chamada li{
+    font-weight: 620;
+    font-size: 16px;
+}
+
+.chamada button, .form form input[type=submit]{
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: #ff703e;
+    font-weight: bold;
+    border: 0;
+    padding: 11px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.device-width{
+    width: 50%;
+    float: right;
+}
+
+.device{
+    position: absolute;
+    background-image: url(../imagens/device.png);
+    height: calc(100% + 40px);
+    width: 50%;
+    top: -40px;
+   /* left: 45%; É um tanto faz, mas aplicando fica um efeito daorinha*/
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+
+.content{
+    width: 100%;
+}
+
+.container-boss{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.container-text{
+    text-align: center;
+    margin: 60px auto 0 auto;
+    width: 1280px;
+    max-width: 100%;
+}
+
+.container-text h2{
+    color: #472663;
+    font-size: 36px;
+    margin: 15px auto;
+}
+
+.container-text p{
+    color: #472663;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.iframe-img{
+    margin: 0 auto;
+    width: 950px;
+    max-width: 100%;
+    height: 500px;
+    position: relative;
+    bottom: -100px;
+    border: 3px solid #ccc;
+    box-shadow: 1px 1px 20px 1px black;
+}
+
+.iframe-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.container2, .container3{
+    width: 50%;
+    height: 300px;
+    padding-top: calc(100px + 30px);
+}
+
+.container2{
+    float: left;
+    background-color: #835fa8;
+    padding-right: 20px;  
+}
+
+.container2 h2{
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.container2-text{
+    float: right;
+    width: calc(950px / 2);
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.container3{
+    float: right;
+    padding-left: 20px;
+}
+
+.container3-text{
+    float: left;
+    width: calc(950px / 2);
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.profile{
+    height: 62px;
+    width: 280px;
+    max-width: 100%;
+    background-image: url(../imagens/actor1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 10px;
+}
+
+.profile h2{
+    color: black;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.container3-text p{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.slider{
+    width: fit-content;
+    padding: 0 10px;
+    margin-top: 15px;
+}
+
+.slider p{
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+.contato{
+    background-color: #472663;
+    width: 100%;
+    padding: 90px 2%;
+    overflow: auto;
+}
+
+.contato h2{
+    font-weight: 500;
+    font-size: 37px;
+    margin: 15px auto;
+}
+
+.contato1{
+    float: left;
+    width: 50%;
+}
+
+.contato2{
+    float: right;
+    width: 50%;
+}
+
+.form{
+    width: 480px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.form p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+}
+
+.form input:not([type=submit]), .form textarea{
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    width: 100%;
+    padding: 0 20px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin: 8px 0
+}
+
+.form form textarea{
+    padding: 14px 20px;
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+}
+
+.form input:not([type=submit]){
+    height: 55px;
+    line-height: 55px;
+}
+
+.form form input[type=submit]{
+    padding: 12px 30px;
+}
+
+.local{
+    margin: 0 auto;
+    width: 480px;
+    max-width: 100%;
+}
+
+.google-maps{
+    width: 100%;
+    height: 480px;
+    background-color: #ccc;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #1a2124;
+    text-align: center;
+}
+
+footer p{
+    margin: 20px 100px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1337px){
+    .mensagem{
+        transform: translate(-100%, -50%);
+        right: -550px;
+        left: auto;
+    }
+    .container2, .container3{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .contato1, .contato2{
+        float: none;
+        width: 100%;
+    }
+
+    .contato1{
+        border-bottom: 2px solid #8453e6;
+    }
+
+    .form form input[type=submit]{
+        margin: 10px auto;
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 802px){
+    .desktop-menu{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .mensagem{
+        z-index: 1;
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translate(0, 15%);
+        margin: 0 auto;
+        padding: 130px 0 0 0;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .device-width{
+        display: none;
+    }
+    .chamada-width{
+        width: 100%;
+        text-align: center;
+    }
+    .chamada h2{
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .chamada{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 704px){
+    header{
+        min-height: 600px;   ;
+    }
+
+    .logo{
+        text-align: left;
+    }
+    
+    .logo img{
+        transform: translate(0, 0);
+        margin-left: 10px;
+    }
+
+    .mensagem h1{
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .mensagem p{
+        font-size: 14px;
+}
+    .iframe-img{
+        height: auto;
+        bottom: -80px;
+    }
+    .container2, .container3{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container3{
+        padding-top: 20px;
+    }
+
+    .container2-text, .container3-text{
+        float: none;
+        margin: 0 auto;
+
+    }
+
+    .slider{
+        margin: 0 auto;
+    }
+
+}
