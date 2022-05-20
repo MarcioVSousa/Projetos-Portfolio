@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', 'Trebuchet MS';
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #ccc;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.topo {
+    height: 100%;
+    padding: 10px 2%;
+}
+
+.logo1 {
+    float: left;
+    width: 160px;
+    height: 60px;
+    background-image: url(../imagens/logo1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo2 {
+    float: right;
+    width: 160px;
+    height: 60px;
+    background-image: url(../imagens/logo2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    height: 700px;
+    background-image: url(../imagens/banner.jpg);
+    background-size: cover;
+}
+
+.formulario {
+    float: right;
+    margin: 15px 40px 15px 0;
+    width: 90%;
+    max-width: 500px;
+    height: 95%;
+    max-height: 700px;
+    background-color: rgba(204, 204, 204, 0.75);
+    box-shadow: 5px 5px 5px rgba(61, 44, 44, 0.5);
+}
+
+.form-header {
+    text-align: center;
+    background-color: rgba(230, 230, 230, 0.75);
+}
+
+.form-header h2 {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 40px 0;
+}
+
+form fieldset {
+    border: 0;
+    width: 70%;
+    margin: 30px auto;
+}
+
+form label {
+    display: block;
+    color: rgb(66, 64, 64);
+}
+
+form input {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form .buttom {
+    border: 0;
+    background-color: rgb(4, 67, 83);
+    height: 65px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form .buttom:hover {
+    background-color: rgba(4, 67, 83, 0.5);
+}
+
+form p {
+    font-size: 18px;
+    color: rgb(66, 64, 64);
+}
+
+.chamada {
+    padding: 40px 0;
+    background-color: rgb(208, 253, 246);
+    text-align: center;
+    position: relative;
+}
+
+.chamada .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 96%;
+    max-width: 600px;
+}
+
+.chamada h2 {
+    color: rgb(25, 29, 28);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.chamada p {
+    color: rgb(25, 29, 28);
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.icon-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.mosaico .container {
+    max-width: 1280px;
+}
+
+.flex-vitrine {
+    margin: 3px auto;
+    background-color: #215170;
+    display: flex;
+    height: 400px;
+}
+
+.vitrine-title {
+    width: 40%;
+    padding: 150px 40px;
+    font-size: 23px;
+    color: white;
+}
+
+.vitrine-img {
+    width: 60%;
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    background-color: #ccc;
+}
+
+footer img{
+    width: 120px;
+}
+
+@media screen and (max-width: 460px) {
+    .logo1, .logo2 {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .logo1 {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .formulario {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .banner {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .formulario {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    form fieldset {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-vitrine {
+        display: block;
+        height: fit-content;
+        margin: 8px auto;
+    }
+
+    .vitrine-title {
+        width: 100%;
+        padding: 70px 40px;
+    }
+
+    .vitrine-img {
+        width: 100%;
+        height: 80vw;
+    }
+}
