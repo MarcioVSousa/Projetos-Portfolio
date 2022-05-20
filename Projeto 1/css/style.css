@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+html, body{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+}
+
+header section.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    margin: 0 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+header nav.mobile-menu{
+    display: none;
+    background-image: url(../images/menu-mobile.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+header nav.mobile-menu ul.disabled{
+    display: none;
+}
+
+header nav.mobile-menu ul{
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+header nav.mobile-menu ul li{
+    padding: 8px 0;
+}
+
+header nav.mobile-menu ul li:hover{
+    background-color: #ccc;
+}
+
+section.mosaico{
+    flex-direction: column;
+    display: flex;
+}
+
+section.mosaico > .linha{
+    width: 100%;
+    display: flex;
+}
+
+section.mosaico > .linha > .imagem{
+    width: calc(100% / 6);
+    padding-top: calc(100% / 6);
+    margin: 5px;
+    background-color: #ccc; 
+}
+
+section.servicos{
+    margin: 0 auto;
+    display: flex;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    top: -25px;
+    flex-wrap: wrap;
+}
+
+section.servicos > div h2{
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+section.servicos > div p{
+    font-size: 12px;
+}
+
+section.servicos div:not([class='chamada-principal']){
+    width: 30%;
+    padding: 50px 10px;
+    background-color: #576975;
+    background-image: url(../images/icone_dente.png);
+    background-position: 50% 95%;
+    background-repeat: no-repeat;
+}
+
+section.servicos > .chamada-principal{
+    padding: 75px 10px;
+    width: 40%;
+    background-color: #688293;
+}
+
+section.perfil{
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+section.perfil > div.foto-perfil{
+    text-align: center;
+    width: 100%;
+    flex: 1 1 280px;
+}
+
+section.perfil > div.description-perfil{
+    width: 100%;
+    flex: 1 1 380px;
+    padding: 10px;
+    text-align: justify;
+}
+
+section.perfil > div.description-perfil h2{
+    padding: 0 10px;
+    color: #698293;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section.perfil > div.description-perfil p{
+    padding: 0 10px;
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+section.videos-yt{
+    display: flex;
+    justify-content: space-between;
+    margin: 90px auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+section.videos-yt iframe{
+    width: 30%;
+    margin: 0 5px;
+    height: 230px;
+}
+
+section.tratamentos > h2, section.depoimentos > h2, section.formulario > h2{
+    margin-bottom: 80px;
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.tratamentos div.tratamento-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+section.tratamentos div.tratamento-flexbox > div{
+    width: 30%;
+    min-width: 100px;
+    margin-bottom: 40px;
+}
+section.tratamentos div.tratamento-flexbox > div h2{
+    font-size: 18px;
+    color: #737373;
+}
+
+section.tratamentos div.tratamento-flexbox div p, section.depoimentos p{
+    padding: 10px 0;
+    font-size: 13px;
+    color: #b4b4b4;
+}
+
+section.depoimentos > h2{
+    margin-bottom: 30px;
+}
+
+section.depoimentos p{
+    font-size: 15px;
+}
+
+section.depoimentos .depoimento-box{
+    width: 380px;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+section.depoimentos .depoimento-box > div{
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+section.depoimentos .depoimento-box > div p{
+    margin-left: 5px;
+}
+
+section.publicidade{
+    width: 100%;
+}
+
+section.publicidade div.social-media{
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #98a5ae;
+    margin-top: 40px;
+}
+
+section.publicidade div.social-media:last-of-type{
+    background-color: #576975;
+    margin: 0;
+}
+
+section.publicidade div.social-media p{
+    line-height: 18px;
+    padding: 5px 0;
+    font-size: 13px;
+    color: white;
+}
+
+section.publicidade .galeria-slide{
+    width: 100%;
+    display: flex;
+}
+
+section.publicidade .galeria-slide > div{
+    background-color: #ccc;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    border: 6px solid white;
+}
+
+section.formulario{
+    width: 490px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+section.formulario > h2{
+    margin: 60px 0 30px 0;
+}
+
+section.formulario form{
+    width: 100%;
+    padding: 0 10px;
+}
+
+section.formulario fieldset{
+    width: 100%;
+    margin: 8px 0;
+}
+
+section.formulario input:not([type=submit]), .mensagem textarea{
+    display: block;
+    padding: 0 5px;
+    line-height: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 8px;
+}
+
+section.formulario label{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+section.formulario .email, section.formulario .tel{
+    width: 48%;
+    float: left;
+}
+
+section.formulario .tel{
+    float: right;
+}
+
+section.formulario .mensagem textarea{
+    height: 120px;
+}
+
+section.formulario .botao{
+    display: block;
+    margin: 10px auto;
+    color: white;
+    background-color: #688293;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    padding: 40px 2%;
+    background-color: #688293;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    flex-wrap: wrap;
+}
+
+footer h2{
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+footer p{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px){
+    section.publicidade .galeria-slide > div{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    section.publicidade .galeria-slide > div:nth-of-type(n+7){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px){
+    header nav.mobile-menu{
+        display: block;
+    }
+
+    header nav.desktop-menu{
+        display: none;
+    }
+
+    section.servicos{
+        flex-direction: column;
+    }
+    section.servicos div:not([class='chamada-principal']){
+        width: 360px;
+        max-width: 100%;
+    }
+    section.servicos .chamada-principal{
+        width: 390px;
+        max-width: 100%;
+        padding: 50px 10px;
+    }
+
+    section.videos-yt{
+        display: block;
+    }
+    section.videos-yt iframe{
+        width: 360px;
+        max-width: 100%;
+        margin: 20px;
+        padding: 0 5px;
+    }
+
+    section.publicidade .galeria-slide > div{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    section.publicidade .galeria-slide > div:nth-of-type(n+4){
+        display: none;
+    }
+
+    section.formulario .email, section.formulario .tel{
+        width: 100%;
+        float: none;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer > div{
+        margin: 10px 0
+    }
+}
