@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+}
+
+body{
+    background-color: #1A1A1A;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.title{
+    width: fit-content;
+}
+
+img{
+    width: fit-content;
+}
+
+div.content{
+    display: flex;
+    width: 950px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #282828;
+    justify-content: space-between;
+    color: rgb(255, 115, 115);
+}
+
+div.entrada h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+div.entrada .alert p{
+    font-size: 15px;
+}
+
+div.entrada label{
+    display: block;
+    font-size: 14px;
+}
+
+div.entrada input{
+    display: block;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'open sans';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+div.entrada .btn{
+    margin: 10px 0 0 0;
+    background-color: rgb(255, 115, 115);
+    color: #fff;
+    cursor: pointer;
+}
+
+div.entrada .btn:hover{
+    background-color: rgba(255, 115, 115, 0.5);
+}
+
+div.saida{
+    width: 60%;
+    padding: 10px;
+    background-color: rgb(177, 81, 81);
+    border-radius: 10px;
+    color: #fff;
+}
+
+div.saida > div{
+    margin: 10px 0;
+}
+
+div.saida .props{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+div.saida .data{
+    background-color: rgb(177, 81, 81);
+    border: 0;
+    outline: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+div.saida .data::placeholder{
+    color:#28282875
+}

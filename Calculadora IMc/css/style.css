@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: #282828;
+    color: #fff;
+}
+
+header{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+header h2{
+    color:rgb(255, 115, 115);
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+
+header p{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+header > div{
+    margin: 10px 0;
+    text-align: left;
+}
+
+header > div p{
+    color:rgb(255, 115, 115);
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+main form{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form fieldset{
+    margin: 15px 0;
+}
+
+form label{
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+form input, form select, form button{
+    margin-top: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 15px 12px;
+    background-color: #1A1A1A;
+    border-radius: 8px;
+    outline: none;
+}
+
+form input:not([type=button]):focus, form select:focus{
+    border: 2px solid rgb(255, 115, 115);
+}
+
+form input[type=button], form button{
+    background-color: rgb(255, 115, 115);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+form input[type=button]:hover, form button:hover{
+    transform: scale(1.01);
+}
+
+section.result{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #1A1A1A;
+    padding: 20px 10px;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+section.result p{
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+section.result p.initial{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+section.result strong{
+    color: rgb(255, 115, 115);
+}
+
+footer{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border-bottom: 0.5px solid rgb(255, 115, 115);
+    color: #fff;
+}

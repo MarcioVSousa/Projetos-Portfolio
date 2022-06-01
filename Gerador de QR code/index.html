@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Márcio">
+    <title>Gerador QR</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <h2 class="title">Gerador de QR code</h2>
+        <div class="container">
+            <input type="text" name="texto" id="text" placeholder="Insira um texto ou URL">
+            <div class="botoes">
+                <input type="button" value="Gerar" onclick="gerarCode()">
+                <input type="button" value="Limpar" onclick="clearCode()">
+            </div>
+            <div class="QR-box" id="QR-box">
+                <p>Aguardando...</p>
+                <p>O QR code aparecerá aqui.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

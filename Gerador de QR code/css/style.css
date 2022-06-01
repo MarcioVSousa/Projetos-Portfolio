@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&display=swap');
+
+:root{
+    --font-title: 'Press Start 2P', sans-serif;
+    --font-body: 'Roboto Mono', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+    color: #fff;
+    font-family: var(--font-body);
+}
+
+h2.title{
+    font-family: var(--font-title);
+    margin: 40px auto 20px auto;
+    width: fit-content;
+}
+
+div.container{
+    display: flex;
+    width: 95%;
+    max-width: 600px;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #282828;
+}
+
+div.container input{
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #1A1A1A;
+    font-family: var(--font-body);
+    background-color: white;
+}
+
+input::placeholder{
+    color: #1A1A1A;
+}
+
+div.container div.botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+div.container input[type=button]{
+    width: 48%;
+    color: #fff;
+    background-color: rgb(255, 115, 115);
+    cursor: pointer;
+}
+
+div.container input[type=button]:active{
+    background-color: rgba(255, 115, 115, 0.5);
+}
+
+div.container div.QR-box{
+    display: flex;
+    width: 320px;
+    height: 320px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #1A1A1A;
+    text-align: center;
+}
+
+div.QR-box p:first-of-type{
+    margin-bottom: 10px;
+}

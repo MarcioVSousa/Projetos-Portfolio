@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="Márcio">
+    <meta name="keywords" content="">
+    <meta name="description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Montserrat:wght@100;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>Calculadora de calorias</h2>
+        <p>Descubra seu IMC e metabolismo basal</p>
+        <div></div>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="" selected>Escolha uma opção</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" placeholder="Insira sua idade">
+            </fieldset>
+            <fieldset>
+                <label for="peso">Peso(Kg)</label>
+                <input type="number" name="peso" id="peso" placeholder="Insira seu peso">
+            </fieldset>
+            <fieldset>
+                <label for="altura">Altura(cm)</label>
+                <input type="number" id="altura" placeholder="Insira sua altura">
+            </fieldset>
+            <fieldset>
+                <label for="atv">Nível de atividade</label>
+                <select name="atv" id="atv">
+                    <option value="0" selected>Escolha uma opção</option>
+                    <option value="1.2">Sedentário</option>
+                    <option value="1.375">Pouca atividade</option>
+                    <option value="1.55">Atividade moderada</option>
+                    <option value="1.725">Atividade intensa</option>
+                    <option value="1.9">Atividade muito intensa</option>
+                </select>
+            </fieldset>
+            <fieldset id="box-button">
+                <button type="button" id="start" onClick="CalcularResult()">Calcular</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <section class="result" id="result-container">
+        <p class="initial">Aguardando dados...</p>
+    </section>
+
+    <footer>
+        <a href="#" target="_blank">Acesse o repositório no Github</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

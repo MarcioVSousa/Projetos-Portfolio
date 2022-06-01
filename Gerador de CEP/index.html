@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/lupa.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="title">
+            <img src="images/logo-cep-pq.png">
+        </div>
+
+        <div class="content">
+            <div class="entrada">
+                <h2>Insira o CEP que deseja consultar</h2>
+                <label for="cep">CEP</label>
+                <input type="text" maxlength="9" id="cep" placeholder="00000-000">
+                <div class="alert" id="alert">
+                </div>
+                <input type="button" value="Procurar" class="btn" onclick="buscarData()">
+                <input type="button" value="Limpar" class="btn" onclick="clearData()">
+            </div>
+
+            <div class="saida">
+                <div>
+                    <p class="prop">Logradouro</p>
+                    <input type="text" class="data" id="logradouro" placeholder="Rua/Avenida">
+                </div>
+                <div>
+                    <p class="prop">Bairro</p>
+                    <input type="text" class="data" id="bairro" placeholder="Bairro">
+                </div>
+                <div>
+                    <p class="prop">Cidade</p>
+                    <input type="text" class="data" id="localidade" placeholder="Cidade">
+                </div>
+                <div>
+                    <p class="prop">UF</p>
+                    <input type="text" class="data" id="uf" placeholder="UF">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
